@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+    <div class="container">
+<input class="display" type="text" id="result" readonly style="border-radius: 10px; padding:10px;">
+<div style="display:flex; flex-wrap:wrap; width:100%;">
+    <div class="number"><button onclick="clearResult()" style="color: blue">AC</button></div>
+<div class="number" ><button onclick="backspace()" style="color:blue;" >DEL</button></div>
+<div class="number"><button onclick="appendToResult('%')" style="color: blue">%</button></div>
+<div class="number"><button onclick="appendToResult('/')" style="color: blue">/</button></div>
+<div class="number"><button onclick="appendToResult('7')">7</button></div>
+<div class="number"><button onclick="appendToResult('8')">8</button></div>
+<div class="number"><button onclick="appendToResult('9')">9</button></div>
+<div class="number"><button onclick="appendToResult('*')" style="color: blue"><i class="fa-solid fa-xmark"></i></button></div>
+<div class="number"><button  onclick="appendToResult('4')">4</button></div>
+<div class="number"><button  onclick="appendToResult('5')">5</button></div>
+<div class="number"><button onclick="appendToResult('6')">6</button></div>
+<div class="number"><button onclick="appendToResult('-')" style="color: blue">-</button></div>
+<div class="number"><button onclick="appendToResult('1')">1</button></div>
+<div class="number"><button onclick="appendToResult('2')">2</button></div>
+<div class="number"><button onclick="appendToResult('3')">3</button></div>
+<div class="number"><button onclick="appendToResult('+')" style="color: blue">+</button></div>
+<div class="number"><button onclick="appendToResult('0')">0</button></div>
+        <div class="number"><button onclick="appendToResult('00')">00</button></div>
+        <div class="number"><button onclick="appendToResult('.')" style=" font-size: 39px;">.</button></div>
+
+        <div class="number" ><button onclick="calculateResult()" style="color: blue; font-size: 29px;">=</i></button></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
