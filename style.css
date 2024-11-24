@@ -8,9 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
     background-color: aliceblue;
     flex-wrap: wrap;
+    height: 100vh;
 }
 div{
     border-radius: 10px;
